@@ -1,0 +1,20 @@
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF_MarkupCompile.cache
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF_MarkupCompile.lref
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\bin\Debug\net6.0-windows\C# WPF.exe
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\bin\Debug\net6.0-windows\C# WPF.deps.json
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\bin\Debug\net6.0-windows\C# WPF.runtimeconfig.json
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\bin\Debug\net6.0-windows\C# WPF.dll
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\bin\Debug\net6.0-windows\C# WPF.pdb
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.g.resources
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.AssemblyInfo.cs
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.dll
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\refint\C# WPF.dll
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.pdb
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\C# WPF.genruntimeconfig.cache
+C:\Users\user\Desktop\Programing'\C# WPF\C# WPF\C# WPF\obj\Debug\net6.0-windows\ref\C# WPF.dll

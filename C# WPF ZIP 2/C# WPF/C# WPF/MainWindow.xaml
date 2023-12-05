@@ -1,0 +1,358 @@
+﻿<Window x:Class="C__WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C__WPF"
+        mc:Ignorable="d"
+        Title="ToDoApp" Height="550" Width="900">
+
+    <Grid Background="#240a57">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Start" 
+                   VerticalAlignment="Stretch" FontSize="26" 
+                   Margin="20,10,10,10" FontWeight="DemiBold"
+                   Foreground="White"/>
+        <Button Grid.Row="1" Grid.Column="0" Margin="15,10,15,10" 
+                Background="#1484a4">
+            <StackPanel>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Mail"
+                        Margin="0,45,88,10"
+                        Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+            <!--<TextBlock Grid.Row="1" Grid.Column="0" Text="Mail"
+                        Margin="-55,35,30,-10"
+                        Foreground="White" FontSize="10"/>-->
+        </Button>
+
+        <Image Source="/Images/Mail.png" Grid.Row="1" Grid.Column="0" 
+               Margin="30,15,30,40"/>
+        <!--<TextBlock Grid.Row="1" Grid.Column="0" Text="Mail" 
+                   VerticalAlignment="Bottom" Margin="25,10,10,10"
+                   Foreground="White" FontSize="10"/>-->
+
+        <Button Grid.Row="2" Grid.Column="0" Margin="15,10,15,10" Background="#d36709">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="People"
+                    Margin="0,45,80,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/People.png" Grid.Row="2" Grid.Column="0" 
+                Margin="30,15,30,30"/>
+
+        <Button Grid.Row="3" Grid.Column="0" Margin="15,10,15,10" Background="#8c0b9c">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Messaging"
+                        Margin="0,45,65,10"
+                        Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Messaging.png" Grid.Row="3" Grid.Column="0" 
+            Margin="30,15,30,30"/>
+
+        <Button Grid.Row="4" Grid.Column="0" Margin="15,10,15,10" Background="#0090ff">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Desktop"
+                        Margin="0,45,75,10"
+                        Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Desktop.png" Grid.Row="4" Grid.Column="0" 
+                Margin="30,15,30,30"/>
+
+        <Button Grid.Row="1" Grid.Column="1" Margin="15,10,15,10" Background="#6706ab">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Calendar"
+                Margin="0,45,65,10"
+                Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Calendar.png" Grid.Row="1" Grid.Column="1" 
+                Margin="30,15,30,30"/>
+
+        <Button Grid.Row="2" Grid.Column="1" Margin="15,10,15,10" Background="#1484a4">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="Photos"
+                        Margin="0,45,75,10"
+                        Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Photos.png" Grid.Row="2" Grid.Column="1" 
+                Margin="30,15,30,30"/>
+
+        <Button Grid.Row="3" Grid.Column="1" Margin="15,10,15,10" Background="#118900">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="Finance"
+                Margin="0,45,70,10"
+                Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Finance.png" Grid.Row="3" Grid.Column="1" 
+                    Margin="30,15,30,30"/>
+
+
+        <Button Grid.Row="4" Grid.Column="1" Margin="15,10,15,10" Background="#00beff">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="Weather"
+                            Margin="0,45,70,10"
+                            Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Weather.png" Grid.Row="4" Grid.Column="1" 
+            Margin="30,15,30,30"/>
+
+
+        <Button Grid.Row="1" Grid.Column="2" Margin="5,10,77,10" Background="#00beff">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="Internet Explorer"
+                Margin="0,45,0,10"
+                Foreground="White" FontSize="8"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Internet Exploler.png" Grid.Row="1" Grid.Column="2" 
+                Margin="0,15,70,40"/>
+
+
+        <Button Grid.Row="1" Grid.Column="2" Margin="77,10,5,10" Background="#118900">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="Store "
+                            Margin="0,45,30,10"
+                           Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Store.png" Grid.Row="1" Grid.Column="2" 
+                        Margin="70,10,0,40"/>
+
+        <Button Grid.Row="2" Grid.Column="2" Margin="5,10,77,10" Background="#8c0b9c">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="2" Grid.Column="2" Text="Maps"
+                            Margin="0,45,30,10"
+                            Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Maps.png" Grid.Row="2" Grid.Column="2" 
+                     Margin="0,15,70,40"/>
+
+
+        <Button Grid.Row="2" Grid.Column="2" Margin="77,10,5,10" Background="#006dc1">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="2" Grid.Column="2" Text="OneDrive "
+                    Margin="0,45,10,10"
+                   Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/OneDrive.png" Grid.Row="2" Grid.Column="2" 
+               Margin="70,10,0,40"/>
+
+        <Button Grid.Row="3" Grid.Column="2" Margin="15,10,15,10" Background="#6706ab">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="3" Grid.Column="2" Text="Sports"
+                        Margin="0,45,75,10"
+                        Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Sports.png" Grid.Row="3" Grid.Column="2" 
+                Margin="30,15,30,30"/>
+
+        <Button Grid.Row="4" Grid.Column="2" Margin="15,10,15,10" Background="#c60044">
+
+            <StackPanel>
+
+                <TextBlock Grid.Row="4" Grid.Column="2" Text="News"
+                    Margin="0,45,75,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/News.png" Grid.Row="4" Grid.Column="2" 
+                        Margin="30,15,30,30"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="3" Margin="45,10,95,10" 
+                Background="#c60044">
+
+            <StackPanel Width="160">
+
+                <TextBlock Grid.Row="1" Grid.Column="3" Text="Bing"
+                    Margin="5,45,95,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Bing.png" Grid.Row="1" Grid.Column="3" 
+                Margin="67,15,117,35" Grid.ColumnSpan="2" RenderTransformOrigin="0.504,0.471"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="2" Grid.Column="3" Margin="45,10,95,10" 
+                        Background="#1484a4">
+
+            <StackPanel Width="160">
+
+                <TextBlock Grid.Row="2" Grid.Column="3" Text="Travel"
+                            Margin="5,45,95,10"
+                            Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Travel.png" Grid.Row="2" Grid.Column="3" 
+                Margin="67,15,117,35" Grid.ColumnSpan="2" RenderTransformOrigin="0.504,0.471"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="3" Margin="45,10,95,10" 
+                Background="#8c0b9c">
+
+            <StackPanel Width="160">
+
+                <TextBlock Grid.Row="3" Grid.Column="3" Text="Camera"
+                    Margin="5,45,95,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Camera.png" Grid.Row="3" Grid.Column="3" 
+                Margin="67,15,117,35" Grid.ColumnSpan="2" RenderTransformOrigin="0.504,0.471"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="3" Margin="45,10,95,10" 
+                Background="#c60044">
+
+            <StackPanel Width="160">
+
+                <TextBlock Grid.Row="4" Grid.Column="3" Text="Video"
+                    Margin="5,45,95,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Video.png" Grid.Row="4" Grid.Column="3" 
+                Margin="67,15,117,35" Grid.ColumnSpan="2"
+                RenderTransformOrigin="0.504,0.471"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="2" Grid.Column="4" Margin="110,10,50,10" 
+                Background="#d36709">
+
+            <StackPanel Width="140">
+
+                <TextBlock Grid.Row="2" Grid.Column="3" Text="Music"
+                    Margin="5,45,95,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/MMusic.png" Grid.Row="2" Grid.Column="4" 
+                Margin="138,10,79,40" Grid.ColumnSpan="2" RenderTransformOrigin="0.504,0.471"/>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="4" Margin="110,10,50,10" 
+            Background="#118900">
+
+            <StackPanel Width="140">
+
+                <TextBlock Grid.Row="2" Grid.Column="3" Text="Games"
+                    Margin="5,45,95,10"
+                    Foreground="White" FontSize="10"/>
+
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="/Images/Games.png" Grid.Row="3" Grid.Column="4" 
+            Margin="138,10,79,40" Grid.ColumnSpan="2" RenderTransformOrigin="0.504,0.471"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="6" Text="User" 
+           VerticalAlignment="Stretch" FontSize="26" 
+           Margin="-40,10,50,10" FontWeight="DemiBold"
+           Foreground="White"/>
+
+        <Image Source="/Images/User.png" Grid.Row="0" Grid.Column="6" 
+        Margin="10,10,40,30"/>
+
+    </Grid>
+
+</Window>
