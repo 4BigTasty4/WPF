@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="MonefyProjects.Views.MinusCategoriesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MonefyProjects.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="500">
+    <Grid>
+        <TabPanel Grid.Row="1" Background="{Binding BackgroundColor}" Visibility="{Binding MinusCategoriesView}">
+            <ScrollViewer
+          VerticalScrollBarVisibility="Auto"
+          HorizontalScrollBarVisibility="Disabled" Margin="0,0,-16,0">
+                <TabPanel Height="649">
+                    <Button Content="Toiletry" Foreground="#66829c" Name="Toiletry" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Food" Foreground="#c94178" Name="Food" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="House" Foreground="#5392b9" Name="House" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Health" Foreground="#a12828" Name="Health" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Eating out" Foreground="#79bf8f" Name="Eating_out" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Car" Foreground="#8691a3" Name="Car" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Clothes" Foreground="#b779d0" Name="Clothes" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Pets" Foreground="#7abb99" Name="Pets" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Gifts" Foreground="#cfaeb8" Name="Gifts" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Entertainment" Foreground="#e6a862" Name="Entertainment" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Communication" Foreground="#ccccd2" Name="Communication" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Sports" Foreground="#76bba9" Name="Sports" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Bills" Foreground="#ceae21" Name="Bills" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Taxi" Foreground="#c19026" Name="Taxi" Command="{Binding SaveMinusMoney}"/>
+                    <Button Content="Transport" Foreground="#c32f2f" Name="Transport" Command="{Binding SaveMinusMoney}"/>
+                </TabPanel>
+            </ScrollViewer>
+        </TabPanel>
+    </Grid>
+</UserControl>

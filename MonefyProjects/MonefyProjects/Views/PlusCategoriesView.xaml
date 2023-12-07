@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="MonefyProjects.Views.PlusCategoriesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MonefyProjects.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="500">
+    <Grid>
+        <TabPanel Grid.Row="1" Background="{Binding BackgroundColor}" Visibility="{Binding PlusCategoriesView}">
+            <ScrollViewer
+          VerticalScrollBarVisibility="Auto"
+          HorizontalScrollBarVisibility="Disabled" Margin="0,0,-16,0">
+                <TabPanel>
+                    <Button Content="Deposits" Foreground="#4ba17a" Name="Deposits" Command="{Binding SavePlussMoney}"/>
+                    <Button Content="Salary" Foreground="#688e52" Name="Salary" Command="{Binding SavePlussMoney}"/>
+                    <Button Content="Savings" Foreground="#d0768f" Name="Savings" Command="{Binding SavePlussMoney}"/>
+                </TabPanel>
+            </ScrollViewer>
+        </TabPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,202 @@
+﻿<UserControl x:Class="MonefyProjects.Views.HomeScreenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MonefyProjects.Views"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             xmlns:viewmodels="clr-namespace:MonefyProjects.ViewModels" 
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" d:DataContext="{d:DesignInstance Type=viewmodels:HomeScreenViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="500">
+    <Grid>
+        <ContentControl Content="{Binding CurrentView, UpdateSourceTrigger=PropertyChanged}"/>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Margin="50,0,50,0">
+
+            <Button Command="{Binding OpenCalcCommand}" CommandParameter="+" Name="Plus" 
+                    Style="{StaticResource MaterialDesignFloatingActionButton}" 
+                    Width="100" Height="100" Grid.Row="1" Grid.Column="2" FontSize="30" 
+                    Background="{Binding BackgroundColor}" Foreground="#04cd87" BorderBrush="#04cd87" BorderThickness="6">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="1.762"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="1.384"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <md:PackIcon Kind="Plus" Foreground="#13f28e" 
+                    VerticalAlignment="Center"/>
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Grid.Column="3" Grid.ColumnSpan="2" 
+        Margin="50,0,0,0" Grid.Row="4">
+            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Name="Minus" 
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="-"
+                    Width="100" Height="100" Grid.Row="1" Grid.Column="0" Content="-" FontSize="30" 
+                    Background="{Binding BackgroundColor}" Foreground="#f47f7c" BorderBrush="#f47f7c" BorderThickness="6">
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Row ="3" Grid.Column="1" Margin="50,90,50,90" Grid.ColumnSpan="3" 
+        Grid.RowSpan="2">
+            <Button Command="{Binding ShowSpendings}"  Content="{Binding Sum, UpdateSourceTrigger=PropertyChanged}" BorderBrush="#13f28e" Background="#13f28e" VerticalAlignment="Center"
+        Width="200" Height="40" 
+        Style="{StaticResource MaterialDesignRaisedButton}"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.ColumnSpan="5" Grid.RowSpan="4" Margin="0,40,0,0">
+
+
+
+            <Button
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Foreground="DarkSeaGreen"
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="0,10,350,10">
+                <md:PackIcon Kind="Food" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="IndianRed"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="0,10,350,10">
+                <md:PackIcon Kind="Train" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="CornflowerBlue"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="0,10,350,10">
+                <md:PackIcon Kind="HouseOutline" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="GreenYellow"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="0,10,350,10">
+                <md:PackIcon Kind="Taxi" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="DarkGray"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="0,-310,100,250">
+                <md:PackIcon Kind="ClothesHanger" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="Black"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="120,-310,0,250">
+                <md:PackIcon Kind="Gym" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="MediumPurple"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="350,-310,0,250">
+                <md:PackIcon Kind="Shop" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="OrangeRed"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="350,-310,0,100">
+                <md:PackIcon Kind="Car" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="DarkSlateBlue"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="350,-250,0,0">
+                <md:PackIcon Kind="Airplane" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="Orange"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="350,-80,0,0">
+                <md:PackIcon Kind="Chemist" Height="50" Width="40"/>
+            </Button>
+            <Button
+                    Foreground="DarkGreen"
+                    Command="{Binding OpenCalcCommand}"
+                    CommandParameter="."
+                    Width="70"
+                    Height="60"
+                    Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                    Margin="120,-80,0,0">
+                <md:PackIcon Kind="Telephone" Height="50" Width="40"/>
+            </Button>
+            <Button
+                   Foreground="RosyBrown"
+                   Command="{Binding OpenCalcCommand}"
+                   CommandParameter="."
+                   Width="70"
+                   Height="60"
+                   Style="{DynamicResource MaterialDesignFlatDarkButton}" 
+                   Margin="0,-80,100,0">
+                <md:PackIcon Kind="ComputerClassic" Height="50" Width="40"/>
+            </Button>
+
+            <StackPanel Height="100" RenderTransformOrigin="0.5,0.5" Width="183">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+
+            </StackPanel>
+
+        </StackPanel>
+        <Grid.RowDefinitions >
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</UserControl>
